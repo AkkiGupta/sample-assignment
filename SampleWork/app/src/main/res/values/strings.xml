@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Sample-Assignment</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDVjn7JPJ5EX4udReLHwU4Yy6Zyg7Dm9ds</string>
+    <string name="taxi">Cabs</string>
+    <string name="locate">Locate</string>
+    <string name="sample">Sample</string>
+    <string name="label_location">Location</string>
+    <string name="label_vehicle_type">Vehicle Type</string>
+    <string name="label_heading_toward">Heading Towards</string>
+</resources>

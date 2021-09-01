@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_rv_vehicles_child"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_micro">
+
+    <ImageView
+        android:id="@+id/ivVehicleImage"
+        android:layout_width="@dimen/icon_vehicle_list_width"
+        android:layout_height="@dimen/icon_vehicle_list_height"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_micro"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/label_location"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_medium"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@+id/ivVehicleImage"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvVehicleCategory"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_micro"
+        android:layout_marginTop="@dimen/spacing_regular"
+        android:ellipsize="end"
+        android:visibility="visible"
+        android:maxLines="5"
+        android:text="@string/label_heading_toward"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivVehicleImage"
+        app:layout_constraintTop_toBottomOf="@+id/tvLocation" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:background="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivVehicleImage" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
